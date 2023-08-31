@@ -73,6 +73,7 @@ To generate TypeScript types, run the following command in your terminal:
 ```bash
 
 npm run codegen
+
 ```
 
 This command will trigger the GraphQL Codegen process, which reads your schema and documents, and generates TypeScript types accordingly.
