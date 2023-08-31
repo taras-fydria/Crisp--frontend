@@ -1,0 +1,13 @@
+query Author {
+  users(where: { role: ADMINISTRATOR }){
+    nodes{
+        name
+        email
+        pages{
+            nodes{
+                isPostsPage
+            }
+        }
+    }
+  }
+}
