@@ -34,9 +34,9 @@ In this project, we use GraphQL Codegen to automatically generate TypeScript typ
 
 Before we begin, ensure that you have the necessary dependencies installed. If you haven't already, you can install them using the following command:
 
-```bash
+````bash
 npm install --save-dev @graphql-codegen/cli @graphql-codegen/client-preset @graphql-codegen/introspection @graphql-codegen/typescript
-```
+````
 
 ### Configuration
 
