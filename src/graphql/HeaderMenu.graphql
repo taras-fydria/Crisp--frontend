@@ -1,0 +1,15 @@
+fragment HeaderMenuItem on MenuItem {
+  databaseId
+  label
+  path
+}
+
+query HeaderMenu($id: ID! = "Header Menu") {
+  menu(id: $id, idType: NAME) {
+    menuItems {
+      nodes{
+        ...HeaderMenuItem
+      }
+    }
+  }
+}

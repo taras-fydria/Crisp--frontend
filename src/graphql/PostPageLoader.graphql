@@ -1,0 +1,12 @@
+query PostPageLoader($uri : String!) {
+  nodeByUri(uri: $uri) {
+    ... on Page {
+      contentTypeName
+      databaseId
+    }
+    ... on Post {
+      contentTypeName
+      databaseId
+    }
+  }
+}
