@@ -22,21 +22,16 @@ const postPageLoader: LoaderFunction = async ({ params }) => {
   });
 
 
-  switch (data.nodeByUri?.__typename) {
+  switch (data?.nodeByUri) {
     case "Page":
     case "Post":
-      output.postType = data.nodeByUri.contentTypeName;
-      output.ID = data.nodeByUri.databaseId;
       break;
 
     default:
-      output = null;
       break;
   }
 
-  console.log(output);
 
-  return "1";
 };
 
 export default postPageLoader;

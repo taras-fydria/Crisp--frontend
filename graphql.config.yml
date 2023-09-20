@@ -8,9 +8,11 @@ documents:
 generates:
   ./gql/:
     preset: "client"
-    presetConfig: 
-      fragmentMasking: false  
+    presetConfig:
+      fragmentMasking: false
+    config:
+      avoidOptionals: true
+      skipTypename: true
   ./graphql.schema.json:
     plugins:
       - "introspection"
-
